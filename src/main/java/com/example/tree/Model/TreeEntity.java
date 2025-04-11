@@ -2,6 +2,7 @@ package com.example.tree.Model;
 
 import jakarta.persistence.*;
 
+@Entity
 public class TreeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
