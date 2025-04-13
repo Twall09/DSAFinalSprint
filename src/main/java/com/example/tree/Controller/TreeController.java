@@ -22,8 +22,14 @@ public class TreeController {
 
     @GetMapping("/enter-numbers")
     public String enterNumbers() {
+        return "enter-numbers";
+    }
+
+    @GetMapping("/")
+    public String home() {
         return "redirect:/enter-numbers";
     }
+
 
     @PostMapping("/process-numbers")
     public String processNumbers(@RequestParam("numbers") String numbers, Model model) throws Exception {
@@ -40,7 +46,6 @@ public class TreeController {
         entity.setTreeStructure(json);
         treeRepository.save(entity);
 
-        model.addAttribute("treeJson", json);
         return "redirect:/previous-trees";
     }
 
