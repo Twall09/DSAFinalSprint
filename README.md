@@ -8,3 +8,12 @@
 # HTML Pages
 - You will find routes enter-numbers & previous-trees under main/resources/templates/
 - Processing route that accepts numbers and constructs Binary tree is under TreeController 
+
+# enter-numbers HTML Page
+
+![Screenshot](images/input.png)
+
+
+# prev-trees HTML Page
+
+![Screenshot](images/prev.png)
