@@ -22,7 +22,7 @@ public class TreeController {
 
     @GetMapping("/enter-numbers")
     public String enterNumbers() {
-        return "enter-numbers";
+        return "redirect:/enter-numbers";
     }
 
     @PostMapping("/process-numbers")
